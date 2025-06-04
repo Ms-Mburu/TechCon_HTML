@@ -2,51 +2,56 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Register for TechCon 2024</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact TechCon 2024</title>
 </head>
 <body>
   <header>
-    <h1>Register for TechCon 2024</h1>
+    <h1>Contact Us</h1>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="schedule.html">Schedule</a>
-      <a href="contact.html">Contact</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="register.html">Register</a></li>
+      </ul>
     </nav>
   </header>
 
   <main>
-    <form action="#" method="post">
-      <div>
-        <label for="full-name">Full Name:</label><br />
-        <input type="text" id="full-name" name="full-name" required />
-      </div>
-      
-      <div>
-        <label for="email">Email Address:</label><br />
-        <input type="email" id="email" name="email" required />
-      </div>
+    <section>
+      <p>
+        Have questions or want to reach out? Use the form below or email us at
+        <a href="mailto:email@example.com" target="_blank" rel="noopener noreferrer">email@example.com</a>.
+      </p>
 
-      <div>
-        <label for="password">Password:</label><br />
-        <input type="password" id="password" name="password" required />
-      </div>
+      <form action="#" method="post">
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" name="name" required /><br /><br />
 
-      <div>
-        <label for="confirm-password">Confirm Password:</label><br />
-        <input type="password" id="confirm-password" name="confirm-password" required />
-      </div>
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" required /><br /><br />
 
-      <div>
-        <input type="checkbox" id="terms" name="terms" required />
-        <label for="terms">I agree to the <a href="terms.html">terms and conditions</a></label>
-      </div>
+        <label for="message">Message:</label><br />
+        <textarea id="message" name="message" rows="5" cols="40" required></textarea><br /><br />
 
-      <div>
-        <button type="submit">Register Now</button>
-      </div>
-    </form>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Our Location</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086343452091!2d-122.4206794846813!3d37.77928017975854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c0a8e52b3%3A0x8f7f1f30284f85bb!2sMoscone%20Center!5e0!3m2!1sen!2sus!4v1594682027297!5m2!1sen!2sus"
+        width="600"
+        height="450"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="TechCon 2024 Location"
+      ></iframe>
+    </section>
   </main>
 
   <footer>
